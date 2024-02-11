@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Build output
+build/
+
+# CMakeFiles
+CMakeFiles/
+*.cmake
+CMakeCache.txt
+Makefile
+
+# Dependency libs
+lib/
