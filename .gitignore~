@@ -40,4 +40,5 @@ CMakeFiles/
 CMakeCache.txt
 Makefile
 
-
+# Dependency libs
+lib/
