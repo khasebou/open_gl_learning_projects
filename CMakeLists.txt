@@ -23,7 +23,7 @@ set(GETOPT "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/getopt.h"
 set(TINYCTHREAD "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/tinycthread.h"
                 "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/tinycthread.c")
 
-set(SOURCE_FILES src/main.cpp)
+set(SOURCE_FILES src/main.cpp src/shader.h)
 
 add_executable(main ${SOURCE_FILES} ${TINYCTHREAD} ${GETOPT} ${GLAD})
 
