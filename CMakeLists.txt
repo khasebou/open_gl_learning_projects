@@ -23,11 +23,12 @@ set(GETOPT "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/getopt.h"
 set(TINYCTHREAD "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/tinycthread.h"
                 "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/deps/tinycthread.c")
 
-set(SOURCE_FILES src/main.cpp src/shader.h)
+set(SOURCE_FILES src/main.cpp src/shader.h src/stb_image.h)
 
 add_executable(main ${SOURCE_FILES} ${TINYCTHREAD} ${GETOPT} ${GLAD})
 
 file(COPY shaders DESTINATION build)
+file(COPY assets  DESTINATION build)
 
 target_link_libraries(main glfw ${GLFW_LIBRARIES})
 
