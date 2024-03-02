@@ -30,3 +30,7 @@ add_executable(main ${SOURCE_FILES} ${TINYCTHREAD} ${GETOPT} ${GLAD})
 file(COPY shaders DESTINATION build)
 
 target_link_libraries(main glfw ${GLFW_LIBRARIES})
+
+add_custom_target(run
+    ./build/main
+)
